@@ -1,85 +1,99 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-  <title> CSS Task-5</title>
-  <style>
-  
-    body {
-      padding-left: 12em;
-      font-family: Georgia, "Times New Roman", Times, serif;
-      color: purple;
-      background-color: #d8da3d;
-      
-    }
-
-    ul.navbar {
-      list-style-type: none;
-      padding: 0;
-      margin: 0;
-      position: absolute;
-      top: 1.5em;
-      left: 1em;
-      width: 9em;
-    }
-
-    h1 {
-      font-family: "Arial Black", Helvetica, Geneva, Arial, SunSans-Regular, sans-serif;
-      color: purple;
-    }
-
-    ul.navbar li {
-      background: white;
-      margin: 0.2em 0;
-      padding: 0.3em;
-      border-right: 1em solid black;
-    }
-
-    ul.navbar a {
-      text-decoration: none;
-    }
-
-    a:link {
-      color: blue;
-    }
-
-    a:visited {
-      color: purple;
-    }
-
-    address {
-      margin-top: 1em;
-      padding-top: 1em;
-      border-top: thin dotted;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Task-5</title>
 </head>
-
 <body>
+    <h1 style="color:blue;" align="center">Registration Form</h1>
+    <form>
+        <table>
+            <table border="1"  align="center" bordercolor="Black" cellspacing="0">
 
-
-<ul class="navbar">
-  <li><a href="index.html">Home page</a></li>
-  <li><a href="musings.html">Musings</a></li>
-  <li><a href="town.html">My town</a></li>
-  <li><a href="links.html">Links</a></li>
-</ul>
-
-
-<h1>My first styled page</h1>
-
-<p>Welcome to my styled page!</p>
-
-<p>It lacks images, but at least it has style.
-And it has links, even if they don't go
-anywhere&hellip;</p>
-
-<p>There should be more here, but I don't know
-what yet.</p>
-
-<address>Made 5 April 2004<br>
-  by myself.</address>
-
+            <tr>
+                <td width="150"><center>First Name</center></td>
+                <td><input type="text" size="65" placeholder=" "></td>
+            </tr>
+            <tr>
+                <td width="150"><center>Last Name</center></td>
+                <td><input type="text" size="65" placeholder=" "></td>
+            </tr>
+            <tr>
+                <td width="150"><center>Email</center></td>
+                <td><input type="email"  size="65" placeholder=""></td>
+            </tr>
+            <tr>
+                <td width="150" ><center>Password</center></td>
+                <td><input type="password" size="65" placeholder=""></td>
+            </tr>
+            <tr>
+                <td width="150"><center>Re-enter Password</center></td>
+                <td><input type="password" size="65" placeholder=""></td>
+            </tr>
+            <tr>
+                <td width="150px" rowspan="2"><center>Gender:</center></td>
+                <td>
+                    <label for="Male"><input type="radio" name="Gender" id="Male">Male</label>
+                </td>
+            <tr>
+                <td>
+                    <label for="Female"><input type="radio" name="Gender" id="Female">Female</label>
+                </td>
+            </tr>
+            </tr> 
+            <tr>
+                <td width="150"><center>Age:</center></td>
+                <td><input type="number" size="300" placeholder=""></td>
+            </tr>
+            <tr>
+                <td width="150"><center>Phone Number:</center></td>
+                <td ><input type="number" size="300" placeholder=""></td>
+            </tr>
+            <tr> 
+                <td width="150" height="40"><center>Address:</center></td>
+                <td>
+                    <textarea name="address" id="address" cols="61" rows="5" placeholder=" "></textarea>
+                </td>
+            </tr> 
+            <tr>
+                <td width="150"><center>State</center></td>
+                <td><input type="text" size="65" placeholder=""></td>
+            </tr>
+            <tr>
+                <td width="150"><center>Country</center></td>
+                <td><select  name="Country" id="Country">
+                        <option value="Choose your country">Choose your country</option>
+                        <option value="India">India</option>
+                        <option value="US">US</option>
+                        <option value="UK">UK</option>
+                        <option value="Australia">Australia</option>
+                </td>
+            </tr>
+            <tr>
+                <td width="150"><center>Languages Known</center></td>
+                <td >
+                    <label for="Languages"><input type="checkbox" name="Languages" id="Languages">English  </label>
+                    <label for="Languages"><input type="checkbox" name="Languages" id="Languages">Kannada  </label>
+                    <label for="Languages"><input type="checkbox" name="Languages" id="Languages">Hindi  </label>
+                    <label for="Languages"><input type="checkbox" name="Languages" id="Languages">Telugu  </label>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <label for="statement">
+                        <input type="checkbox" name="statement" id="statement"> Hereby I declare all the given details are true
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="right"> Log in to <a href="https://ethnus.com/" target="_blank">Ethnus</a> website </td>
+            </tr>
+        </table> 
+        <br>
+        <div align="center" >
+            <input  type="button" value="Register" >
+        </div>
+    </form>
 </body>
 </html>

@@ -3,91 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS Task-4</title>
-    <style>
-        
-
-body{
-    
-    margin-left: 0;
-}
-
-.button{
-    width:150px;
-    display: flex;
-    flex-direction: column;
-    float:left;
-}
-
-button{
-    border: 0;
-    font-size: 15px;
-    padding: 10px;
-    padding-left: 30px;
-    padding-right: 30px;
-    border-radius: 10px;
-    margin-bottom: 10px;
-    margin-right:10px;
-    position:relative;
-    z-index: 1;
-    transition: 0.3s;
-    left: -100px;
-}
-
-.about{
-    background-color: green;
-}
-
-
-.contact{
-    background-color: blue;
-}
-
-.projects{
-    background-color: red;
-}
-
-.help{
-    background-color: brown;
-}
-
-.text{
-    
-    float: left;
-    margin-left: 50px;
-    position:absolute;
-}
-
-button:hover{
-    left: -20px;
-}
-    </style>
+    <title>Task-4</title>
 </head>
 <body>
-    
-        <div class="container">
-            <div class="button">
-                <button class="about">About</button>
-                <button class="contact">contact</button>
-                <button class="projects">Projects</button>
-                <button class="help">help</button>
-            </div>
-        
-            <div class="text">
-                <h1>
-                    Hoverable Sidenav Buttons
-                </h1>
-                <p>
-                    Hover over the buttons in the left side navigation to open them.
-                </p>
-            </div>
-        </div>
-    </fieldset>
-    
-        
-            
-   
-    
- </body>
+    <h2>Registration Form</h2>
+        <table>
+            <tr>
+                <td><label for="fullname">Full Name:</label></td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td ><label for="username">Username:</label></td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td><label for="password">Password:</label></td>
+                <td><input type="password"></td>
+            </tr>
+            <tr>
+                <td><label for="repassword">Re Password:</label></td>
+                <td><input type="password"></td>
+            </tr>
+            <tr>
+                <td><label for="address">Address:</label></td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td><label for="age">Age:</label></td>
+                <td><input type="number"></td>
+            </tr>
+            <tr>
+                <td><label for="gender">Gender:</label></td>
+                <td>
+                    <select id="gender" name="gender">
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td  >
+                    <button>Save</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
 </html>
-
